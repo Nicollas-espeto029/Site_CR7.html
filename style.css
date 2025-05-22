@@ -1,0 +1,163 @@
+body {
+    background-color: #101010;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 48px;
+    color: #b03016;
+}
+
+/* Imagem do clube */
+.club-image {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.5);
+    display: none;
+    max-width: 80%;
+    margin: 20px auto;
+    position: relative;
+    z-index: 1000;
+}
+
+.club-image.active {
+    display: block;
+}
+
+/* Informações do clube */
+.club-info {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    color: rgb(253, 88, 0);
+    margin-top: 10px;
+    display: none;
+}
+
+/* Botões de ação */
+.show-image-button,
+.show-info-button {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ff5500;
+    cursor: pointer;
+}
+
+.show-image-button:hover,
+.show-info-button:hover {
+    background-color: #ddd;
+}
+
+/* Botões estilo tailwind-like */
+.bg-blue-500 {
+    background-color: #3b82f6;
+}
+
+.bg-blue-500:hover {
+    background-color: #2563eb;
+}
+
+.text-white {
+    color: white;
+}
+
+.rounded {
+    border-radius: 0.375rem;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Estilo geral para botões */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Abas e conteúdo */
+.tabs {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-button {
+    padding: 12px 25px;
+    background-color: #ff6200;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.tab-button:hover {
+    background-color: #a22b2b;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.active {
+    display: block;
+}
+
+/* Tabela de dados */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff4d00;
+    color: black;
+}
+
+/* Imagens especiais (ex: jogadores) */
+.cr-img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 330px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cr7-img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 330px;
+    height: auto;
+    border-radius: 10px;
+}
